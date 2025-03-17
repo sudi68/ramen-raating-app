@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Rating App</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/new-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ramen Rating App</h1>
+        </header>
+        <div class="top-section">
+            <div class="image-gallery">
+                <h2>Ramen Images</h2>
+                <div class="gallery-grid">
+                    <div class="ramen-item">
+                        <img src="images/gyukotsu.jpg" alt="Gyukotsu Ramen">
+                        <div class="ramen-details">
+                            <h3>Gyukotsu Ramen</h3>
+                            <a href="#" class="view-details">View Details</a>
+                            <p class="rating">Current Rating: 4.5/5</p>
+                        </div>
+                    </div>
+                    <div class="ramen-item">
+                        <img src="images/kojiro.jpg" alt="Kojiro Ramen">
+                        <div class="ramen-details">
+                            <h3>Kojiro Ramen</h3>
+                            <a href="#" class="view-details">View Details</a>
+                            <p class="rating">Current Rating: 4.2/5</p>
+                        </div>
+                    </div>
+                    <div class="ramen-item">
+                        <img src="images/naruto.jpg" alt="Naruto Ramen">
+                        <div class="ramen-details">
+                            <h3>Naruto Ramen</h3>
+                            <a href="#" class="view-details">View Details</a>
+                            <p class="rating">Current Rating: 4.7/5</p>
+                        </div>
+                    </div>
+                    <div class="ramen-item">
+                        <img src="images/nirvana.jpg" alt="Nirvana Ramen">
+                        <div class="ramen-details">
+                            <h3>Nirvana Ramen</h3>
+                            <a href="#" class="view-details">View Details</a>
+                            <p class="rating">Current Rating: 4.0/5</p>
+                        </div>
+                    </div>
+                    <div class="ramen-item">
+                        <img src="images/shoyu.jpg" alt="Shoyu Ramen">
+                        <div class="ramen-details">
+                            <h3>Shoyu Ramen</h3>
+                            <a href="#" class="view-details">View Details</a>
+                            <p class="rating">Current Rating: 4.8/5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rating-section">
+                <h2>Rate Your Ramen Experience</h2>
+                <form id="rating-form">
+                    <input type="text" id="user-name" placeholder="Your Name" required>
+                    <input type="text" id="restaurant-name" placeholder="Restaurant Name" required>
+                    <input type="text" id="ramen-name" placeholder="Ramen Name" required>
+                    <input type="number" id="ramen-rating" placeholder="Rate from 1 to 5" min="1" max="5" required>
+                    <textarea id="comments" placeholder="Comments (optional)"></textarea>
+                    <button type="submit">Submit Rating</button>
+                </form>
+            </div>
+        </div>
+        <div id="ratings-display">
+            <h2>Ratings</h2>
+            <ul id="ratings-list"></ul>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+    <script src="src/new-feature.js"></script>
+</body>
+</html>

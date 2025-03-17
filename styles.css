@@ -1,0 +1,82 @@
+/* Basic styles for the Ramen Rating App */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.image-gallery {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.ramen-item {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.ramen-item img {
+    width: 100%;
+    height: auto;
+}
+
+.ramen-details {
+    padding: 10px;
+}
+
+#rating-section {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#rating-form input, #rating-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+#rating-form button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#ratings-display {
+    margin-top: 20px;
+}
